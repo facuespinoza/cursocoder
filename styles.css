@@ -12,7 +12,6 @@
     position: fixed;
     top: 0px;
     width: 100%;
-
 }
 
 .pagina-principal h1 {
@@ -26,8 +25,7 @@
 
 .pagina-principal ul  {
     font-size: 20px;
-    display: flex;
-   
+    display: flex; 
 }
 
 .pagina-principal ul li{
@@ -39,7 +37,43 @@
 .pagina-principal ul li a {
     text-decoration: none;
     color: black;
+}
+.pagina-principal .fa-bars{
+    display: none;
+}
 
+@media (max-width:350px){
+    .pagina-principal .fa-bars{
+        display: block;
+        margin: 10px;
+        color: black;
+        font-size: 20px;
+        order: -1;
+    }
+    .pagina-principal .fa-bars:hover + ul{
+        left: 0;
+    }
+    .pagina-principal ul  {
+        position: fixed;
+        top: 0;
+        left: -500px;
+        background-color: white;
+        width: 35vw;
+        height: 100vw;
+        flex-direction: column;
+        padding-top: 40px;
+        align-items: center;
+        transition: 0.5s;
+    }
+    .pagina-principal ul:hover{
+        left: 0;
+    }
+    .pagina-principal h1 a {
+        text-decoration: none;
+        color: black;
+        font-size: 22px;
+        margin-left: 75px;
+    }
 }
 
 .video-presentacion{
@@ -157,6 +191,23 @@
     justify-content: center;
 }
 
+@media (max-width: 350px){
+    .escuderias{
+        row-gap: 20px;
+        margin-top: 90px;
+        padding-left: 20px;
+        justify-content: start;
+        align-items: stretch;
+        display: flex;
+        flex-direction: column;
+         
+    }
+    .escuderia{
+        border: solid 1px black;
+        padding: 2px;
+    }
+}
+
 .escuderia{
     width: 200px;
  
@@ -216,6 +267,12 @@
     height: 20px;
     position: fixed;
     right: 30px ;
+}
+@media (max-width: 350px){
+    .CarritoCompra img{
+        display: block;
+        margin-top: -140px;
+    }
 }
 
 /*estilo tienda virtual cierre*/
