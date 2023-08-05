@@ -12,32 +12,30 @@
     position: fixed;
     top: 0px;
     width: 100%;
-}
-
-.pagina-principal h1 {
-    text-align: center;
-}
-
-.pagina-principal h1 a {
+    h1 {
+        text-align: center;
+        a {
     text-decoration: none;
     color: black;
+          }
+    }
+
+    ul  {
+        font-size: 20px;
+        display: flex; 
+        li{
+            margin-left: 15px;
+            list-style: none ;
+            padding-bottom: 5px;
+            a {
+                text-decoration: none;
+                color: black;
+            } 
+        }    
+    }
 }
 
-.pagina-principal ul  {
-    font-size: 20px;
-    display: flex; 
-}
 
-.pagina-principal ul li{
-    margin-left: 15px;
-    list-style: none ;
-    padding-bottom: 5px;
-}
-
-.pagina-principal ul li a {
-    text-decoration: none;
-    color: black;
-}
 .pagina-principal .fa-bars{
     display: none;
 }
@@ -93,20 +91,13 @@
     /*justify-content: space-evenly;*/
     align-content: stretch;
     flex-wrap: wrap;
-    
-    
+    h3{
+        text-align: center;
+    }
+    p {
+        padding-top: 10px; 
+    }
 }
-.cuerpo h3{
-    text-align: center;
-
-}  
-
-.cuerpo p {
-    padding-top: 10px;
- 
-    
-}
-
 .proximogp {
     text-align: center;
     padding: 15px;
@@ -237,14 +228,14 @@
 .cajaTienda{
     border: solid 1px black;
     width: 290px;
-   
+    h2 {
+        font-size: 22px;
+        margin: 0px 10px;
+    }
     
 }
 
-.cajaTienda h2 {
-    font-size: 22px;
-    margin: 0px 10px;
-}
+
 
 .artiucloTienda{
     width: 100%;
@@ -281,30 +272,25 @@
 
 /*estilo footer */
 
-.pie-pagina h2{
-    color: rgb(233, 5, 51);
-    margin: 20px;
-    padding-top: 10px;
-    
-}
-
-
-.pie-pagina img {
-    height: 20px;  
-}
-
-.pie-pagina label{
-    margin: 10px;
-}
-
 .pie-pagina {
     background-color: rgb(231, 230, 230);
-    color: black;    
-}
+    color: black;
+    h2{
+        color: rgb(233, 5, 51);
+        margin: 20px;
+        padding-top: 10px;  
+    }
+    img {
+        height: 20px;  
+    }
+    label{
+        margin: 10px;
+    }
+    ul li {
+        margin-left: 20px;
+        list-style: none;
+    }
 
-.pie-pagina ul li {
-    margin-left: 20px;
-    list-style: none;
 }
 
 /*estilo footer cierre */
