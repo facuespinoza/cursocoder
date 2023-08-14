@@ -1,0 +1,50 @@
+.cuerpo{
+
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    flex-wrap: wrap;
+    h3{
+        text-align: center;
+    }
+    p {
+        padding-top: 10px; 
+    }
+}
+
+
+
+
+
+.proximogp {
+    text-align: center;
+    padding: 15px;
+    
+}
+
+
+
+.proximogp1{
+    @extend %proximogp;
+}
+
+.proximogp2{
+    @extend %proximogp;
+}
+
+.proximogp3{
+    @extend %proximogp; 
+}
+
+.proximogp4{
+   @extend %proximogp;
+}
+
+.proximogp5{
+    @extend %proximogp;
+}
+
+.proximogp6{
+    @extend %proximogp;
+}
+

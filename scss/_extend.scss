@@ -1,0 +1,13 @@
+%proximogp{
+    width: 400px;
+    height: 200px;
+    background-color: rgb(231, 230, 230);
+    margin: 30px;
+    border: solid 1px;
+    padding: 20px; 
+    &:hover{
+        transition: 0.5s;
+        transform: scale(1.13);
+        background-color: rgba(175, 170, 170, 0.753);
+      } 
+}
