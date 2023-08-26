@@ -4,5 +4,17 @@
     width: 200px;
     margin-top: 80px;
     margin-left: 100px;
-    border: solid, 1px;
+    border: solid, 1px black;
+    padding: 10px;
+}
+
+.contactoyregistro{
+    display: flex;
+    flex-direction: row;
+    
+}
+@media (max-width: 481px){
+    .contactoyregistro{
+        flex-direction: column;
+    }
 }
